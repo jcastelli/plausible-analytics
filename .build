@@ -1,6 +1,5 @@
 404.html
 Mix.Tasks.CancelSubscription.html
-Mix.Tasks.CleanClickhouse.html
 Mix.Tasks.CreateFreeSubscription.html
 Mix.Tasks.CreatePaddleProdPlans.html
 Mix.Tasks.CreatePaddleSandboxPlans.html
@@ -107,6 +106,7 @@ Plausible.Ecto.Types.CompiledRegex.html
 Plausible.Ecto.Types.Nanoid.html
 Plausible.Ecto.Types.NanoidBase.html
 Plausible.Ecto.Types.TrackerScriptNanoid.html
+Plausible.Event.SystemEvents.html
 Plausible.Exports.html
 Plausible.Factory.html
 Plausible.File.html
@@ -117,7 +117,6 @@ Plausible.Funnels.html
 Plausible.Geo.html
 Plausible.Goal.Revenue.html
 Plausible.Goal.html
-Plausible.Goals.SystemGoals.html
 Plausible.Goals.html
 Plausible.Google.API.Mock.html
 Plausible.Google.API.html
@@ -176,7 +175,7 @@ Plausible.InstallationSupport.html
 Plausible.License.html
 Plausible.Mailer.html
 Plausible.MigrationUtils.html
-Plausible.OpenTelemetry.Sampler.html
+Plausible.OpenTelemetry.Logger.html
 Plausible.Pagination.html
 Plausible.Plugins.API.Capabilities.html
 Plausible.Plugins.API.CustomProps.html
@@ -227,7 +226,9 @@ Plausible.Site.ImportedData.html
 Plausible.Site.MonthlyReport.html
 Plausible.Site.Removal.html
 Plausible.Site.SharedLink.html
+Plausible.Site.TrackerScriptCache.html
 Plausible.Site.TrackerScriptConfiguration.html
+Plausible.Site.TrackerScriptIdCache.html
 Plausible.Site.TrafficChangeNotification.html
 Plausible.Site.UserPreference.html
 Plausible.Site.WeeklyReport.html
@@ -242,8 +243,10 @@ Plausible.Stats.Comparisons.html
 Plausible.Stats.ConsolidatedView.html
 Plausible.Stats.CurrentVisitors.html
 Plausible.Stats.CustomProps.html
+Plausible.Stats.Dashboard.QueryParser.html
 Plausible.Stats.DateTimeRange.html
 Plausible.Stats.FilterSuggestions.html
+Plausible.Stats.Filters.LegacyStatsAPIFilterParser.html
 Plausible.Stats.Filters.html
 Plausible.Stats.Funnel.html
 Plausible.Stats.Goal.Revenue.html
@@ -261,6 +264,7 @@ Plausible.Stats.Legacy.TimeOnPage.html
 Plausible.Stats.Metrics.html
 Plausible.Stats.Query.Test.html
 Plausible.Stats.Query.html
+Plausible.Stats.QueryBuilder.html
 Plausible.Stats.QueryOptimizer.html
 Plausible.Stats.QueryResult.html
 Plausible.Stats.QueryRunner.html
@@ -292,6 +296,7 @@ Plausible.Teams.Membership.html
 Plausible.Teams.Memberships.Leave.html
 Plausible.Teams.Memberships.Remove.html
 Plausible.Teams.Memberships.UpdateRole.html
+Plausible.Teams.Memberships.UserPreference.html
 Plausible.Teams.Policy.html
 Plausible.Teams.SiteTransfer.html
 Plausible.Teams.Sites.Transfer.html
@@ -301,6 +306,7 @@ Plausible.Teams.Users.html
 Plausible.Teams.html
 Plausible.Test.Support.HTML.html
 Plausible.Test.Support.HTTPMocker.html
+Plausible.Test.Support.Sandbox.html
 Plausible.TestUtils.html
 Plausible.Themes.html
 Plausible.Times.html
@@ -349,7 +355,7 @@ PlausibleWeb.Components.FirstDashboardLaunchBanner.html
 PlausibleWeb.Components.FlowProgress.html
 PlausibleWeb.Components.Generic.html
 PlausibleWeb.Components.Google.html
-PlausibleWeb.Components.Site.Feature.html
+PlausibleWeb.Components.Site.Feature.ToggleLive.html
 PlausibleWeb.Components.TwoFactor.html
 PlausibleWeb.ConnCase.html
 PlausibleWeb.ControllerHelpers.html
@@ -416,6 +422,8 @@ PlausibleWeb.Live.FunnelSettings.List.html
 PlausibleWeb.Live.FunnelSettings.html
 PlausibleWeb.Live.GoalSettings.Form.html
 PlausibleWeb.Live.GoalSettings.List.html
+PlausibleWeb.Live.GoalSettings.PropertyPairInput.html
+PlausibleWeb.Live.GoalSettings.PropertyPairs.html
 PlausibleWeb.Live.GoalSettings.html
 PlausibleWeb.Live.ImportsExportsSettings.html
 PlausibleWeb.Live.Installation.Icons.html
@@ -470,6 +478,7 @@ PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest.Pageview.html
 PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest.Revenue.html
 PlausibleWeb.Plugins.API.Schemas.Goal.CreateRequest.html
 PlausibleWeb.Plugins.API.Schemas.Goal.CustomEvent.html
+PlausibleWeb.Plugins.API.Schemas.Goal.CustomProps.html
 PlausibleWeb.Plugins.API.Schemas.Goal.DeleteBulkRequest.html
 PlausibleWeb.Plugins.API.Schemas.Goal.ListResponse.html
 PlausibleWeb.Plugins.API.Schemas.Goal.Pageview.html
@@ -526,7 +535,6 @@ PlausibleWeb.Team.Notice.html
 PlausibleWeb.TestController.html
 PlausibleWeb.Tracker.html
 PlausibleWeb.TrackerPlug.html
-PlausibleWeb.TrackerScriptCache.html
 PlausibleWeb.TwoFactor.Session.html
 PlausibleWeb.UnsubscribeController.html
 PlausibleWeb.UnsubscribeView.html
@@ -553,8 +561,8 @@ dist/lato-latin-ext-300-normal-VPGGJKJL.woff2
 dist/lato-latin-ext-400-normal-N27NCBWW.woff2
 dist/lato-latin-ext-700-normal-Q2L5DVMW.woff2
 dist/remixicon-NKANDIL5.woff2
-dist/search_data-01074C09.js
-dist/sidebar_items-1CC4416A.js
+dist/search_data-5D26350C.js
+dist/sidebar_items-9D654086.js
 index.html
 readme.html
 search.html
