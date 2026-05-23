@@ -14,7 +14,7 @@
 
     <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
     <script src="dist/handlebars.templates-K7URE6B4.js"></script>
-    <script src="dist/sidebar_items-9D654086.js"></script>
+    <script src="dist/sidebar_items-6F026B8B.js"></script>
     <script src="docs_config.js"></script>
     <script async src="dist/html-PVRIOB7F.js"></script>
 
@@ -431,6 +431,10 @@ metadata XML or inputting required data one by one.</p></div>
     <a href="Plausible.Billing.html" translate="no">Plausible.Billing</a>
 
   </div>
+
+    <div class="summary-synopsis"><p>Handles Plausible billing subscription lifecycle events (creation, update, cancellation, payment success), 
+Paddle API, team assignment, and notification logic. Provides helpers for formatting prices, 
+managing subscription status, and updating team-related billing state.</p></div>
 
 </div>
 <div class="summary-row">
@@ -1136,6 +1140,8 @@ creating and deleting funnel definitions.</p></div>
 
   </div>
 
+    <div class="summary-synopsis"><p>Goal schema.</p></div>
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -1688,6 +1694,15 @@ methods and whether v1 is used on the site.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.OpenTelemetry.BeamMetrics.html" translate="no">Plausible.OpenTelemetry.BeamMetrics</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Periodic BEAM process sampling via OpenTelemetry observable gauges.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.OpenTelemetry.Logger.html" translate="no">Plausible.OpenTelemetry.Logger</a>
 
   </div>
@@ -2215,6 +2230,43 @@ script API endpoint is bombarded with random IDs.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Sites.Index.html" translate="no">Plausible.Sites.Index</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Site index query module: fetches a sorted, paginated list of site IDs for a
+user, supporting alphanumeric or traffic-based sorting over the last 24 hours.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Sites.Index.Page.html" translate="no">Plausible.Sites.Index.Page</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A single page of results, drop-in replacement for Scrivener.Page </p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Sites.Index.State.html" translate="no">Plausible.Sites.Index.State</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>In-memory representation of a fully-sorted site index for one user</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Sites.Index.UserPreference.html" translate="no">Plausible.Sites.Index.UserPreference</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>User preference persistence schema for the sites index</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.Stats.html" translate="no">Plausible.Stats</a>
 
   </div>
@@ -2270,13 +2322,6 @@ script API endpoint is bombarded with random IDs.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="Plausible.Stats.ConsolidatedView.html" translate="no">Plausible.Stats.ConsolidatedView</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
     <a href="Plausible.Stats.CurrentVisitors.html" translate="no">Plausible.Stats.CurrentVisitors</a>
 
   </div>
@@ -2309,6 +2354,15 @@ to be filled in by each specific report.</p></div>
   </div>
 
     <div class="summary-synopsis"><p>Defines a struct similar <a href="https://hexdocs.pm/elixir/Date.Range.html"><code class="inline">Date.Range</code></a>, but with <a href="https://hexdocs.pm/elixir/DateTime.html"><code class="inline">DateTime</code></a> instead of <a href="https://hexdocs.pm/elixir/Date.html"><code class="inline">Date</code></a>.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Stats.Exploration.html" translate="no">Plausible.Stats.Exploration</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Query logic for user journey exploration.</p></div>
 
 </div>
 <div class="summary-row">
@@ -2370,6 +2424,10 @@ ClickHouse funnel query based on <a href="Plausible.Funnel.html"><code class="in
 
   </div>
 
+    <div class="summary-synopsis"><p>Module defining functions that merge imported query into a native one,
+and also functions that decide whether imported data is eligible for
+a given query.</p></div>
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -2405,7 +2463,8 @@ for dimensions, filters and metrics used in import table queries</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>Collection of functions to work with intervals.</p></div>
+    <div class="summary-synopsis"><p>[DEPRECATED] Stats API v2 handles &quot;intervals&quot; as time dimensions.
+See <code class="inline">Plausible.Stats.ApiQueryParser.parse_dimensions/1</code>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -2469,15 +2528,6 @@ are used when site does not have engagement data for the requested dates.</p></d
     <a href="Plausible.Stats.Query.html" translate="no">Plausible.Stats.Query</a>
 
   </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="Plausible.Stats.Query.Test.html" translate="no">Plausible.Stats.Query.Test</a>
-
-  </div>
-
-    <div class="summary-synopsis"><p>Module used in tests to 'set' the current time.</p></div>
 
 </div>
 <div class="summary-row">
@@ -2572,6 +2622,16 @@ for dimensions and metrics used in query SELECT statement.</p></div>
   </div>
 
     <div class="summary-synopsis"><p>Cache storing estimation for events ingested by a site in the past month.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Plausible.Stats.Sparkline.html" translate="no">Plausible.Stats.Sparkline</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Module used to generate sparkline overview data for sites, including consolidated views.
+The sparkline graphs are used in site index and in CRM.</p></div>
 
 </div>
 <div class="summary-row">
@@ -2875,6 +2935,15 @@ re-record the cassettes anyway).</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Plausible.Test.Support.Sentry.html" translate="no">Plausible.Test.Support.Sentry</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Helper for setting up Sentry test mode in ExUnit tests.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Plausible.TestUtils.html" translate="no">Plausible.TestUtils</a>
 
   </div>
@@ -3122,6 +3191,8 @@ sent us engagement data in the past.</p></div>
 
   </div>
 
+    <div class="summary-synopsis"><p>Helper functions for API controllers.</p></div>
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -3260,6 +3331,15 @@ flow definitions.</p></div>
   </div>
 
     <div class="summary-synopsis"><p>Google-related components</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Components.Icons.html" translate="no">PlausibleWeb.Components.Icons</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Reusable icon components</p></div>
 
 </div>
 <div class="summary-row">
@@ -3494,9 +3574,18 @@ this team.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="PlausibleWeb.E2EController.html" translate="no">PlausibleWeb.E2EController</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="PlausibleWeb.Email.html" translate="no">PlausibleWeb.Email</a>
 
   </div>
+
+    <div class="summary-synopsis"><p>Email template rendering functions.</p></div>
 
 </div>
 <div class="summary-row">
@@ -4098,6 +4187,15 @@ select element replacement, embeddable in dead views.</p></div>
   </div>
 
     <div class="summary-synopsis"><p>LiveView for sites index.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="PlausibleWeb.Live.SubscriptionSettings.html" translate="no">PlausibleWeb.Live.SubscriptionSettings</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>LiveView for the subscription settings page.</p></div>
 
 </div>
 <div class="summary-row">
@@ -4877,13 +4975,6 @@ Authentication.</p></div>
   </div>
 
     <div class="summary-synopsis"><p>Functions for user session management.</p></div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="Storybook.Root.html" translate="no">Storybook.Root</a>
-
-  </div>
 
 </div>
 
